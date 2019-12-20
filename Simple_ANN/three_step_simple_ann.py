@@ -1,6 +1,6 @@
 import numpy as np
-import sys
-sys.path.insert(0,'/mnt/c/Users/Junghyun Lee/Desktop/github/Python_Deeplearning/Activation_function')
+import sys, os
+sys.path.insert(0,os.pardir + '/Activation_function')
 from Sigmoid import sigmoid
 
 X = np.array([3.5,2.2])
