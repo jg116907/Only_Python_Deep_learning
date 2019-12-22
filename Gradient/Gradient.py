@@ -29,7 +29,6 @@ def numerical_gradient(f,x):
     tmp_val = x[idx]
     x[idx] = float(tmp_val) + h
     fxh1 = f(x) # f(x+h)
-    
     x[idx] = tmp_val - h 
     fxh2 = f(x) # f(x-h)
     grad[idx] = (fxh1 - fxh2) / (2*h)
@@ -37,7 +36,6 @@ def numerical_gradient(f,x):
     x[idx] = tmp_val # 값 복원
     it.iternext()
   return grad
-
 ## Test
 # def function_2(x):
 #   return x[0]**2 + x[1]**2 
